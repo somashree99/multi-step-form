@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multistep form</title>
+    <link rel="stylesheet" href="assg2_style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <ul>
+                <li class="active form_1_progressbar">
+                    <div><p>1</p></div>
+                </li>
+                <li class="form_2_progressbar">
+                    <div><p>2</p></div>
+                </li>
+                <li class="form_3_progressbar">
+                    <div><p>3</p></div>
+                </li>
+                <li class="form_4_progressbar">
+                    <div><p>4</p></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form_wrap">
+
+            <div class="form_1 data_info">
+                <h2>Create User</h2>
+                <form action="">
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="name">Name</label>
+                            <input type="text" name="Name" id="name">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="dob">Date Of Birth</label>
+                            <input type="date" name="Date of Birth" id="dob">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="Gender">Gender:</label>
+                            <select name="Gender" id="Gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="others">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="cno">Contact Number</label>
+                            <input type="number" name="Contact Number" id="cno">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form_2 data_info" style="display: none;">
+                <h2>Address Info</h2>
+                <form action="">
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="permanent_addr">Permanent Address</label>
+                            <input type="text" name="Permanent Address" id="permanent_addr">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="present_addr">Present Address</label>
+                            <input type="text" name="Present Address" id="present_addr">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form_3 data_info" style="display: none;">
+                <h2>Academic Details</h2>
+                <form action="">
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="permanent_addr">Class 10 board</label>
+                            <input type="text" name="Permanent Address" id="class_x_board">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="present_addr">Percentage in class 10</label>
+                            <input type="text" name="Present Address" id="class_x_percentage">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="permanent_addr">Class 12 board</label>
+                            <input type="text" name="Permanent Address" id="class_xii_board">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="present_addr">Percentage in class 12</label>
+                            <input type="text" name="Present Address" id="class_xii_percentage">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="permanent_addr">University Name</label>
+                            <input type="text" name="Permanent Address" id="uni_name">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="present_addr">Percentage in graduation</label>
+                            <input type="text" name="Present Address" id="grad_perc">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form_4 data_info" style="display: none;">
+                <h2>Personal Details</h2>
+                <form action="">
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="permanent_addr">Hobby</label>
+                            <input type="text" name="Permanent Address" id="hobby" >
+                        </div>
+                        <div class="input_wrap">
+                            <label for="present_addr">Favourite food</label>
+                            <input type="text" name="Present Address" id="food" >
+                        </div>
+                        <div class="input_wrap">
+                            <label for="present_addr">Favourite dress</label>
+                            <input type="text" name="Present Address" id="dress" >
+                        </div>
+                        <div class="input_wrap">
+                            <label for="present_addr">Mother tongue</label>
+                            <input type="text" name="Present Address" id="mother_tn" >
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="btns_wrap">
+            <div class="common_btns form_1_btns" >
+                <button type="button" class="btn_next">Next
+                    <span class="icon">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </span>
+                </button>
+            </div>
+            <div class="common_btns form_2_btns" style="display: none;">
+                <button type="button" class="btn_back">
+                    <span class="icon"><ion-icon name="arrow-back-outline"></ion-icon></span>Back
+                </button>
+                <button type="button" class="btn_next">Next
+                    <span class="icon">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </span>
+                </button>
+            </div>
+            <div class="common_btns form_3_btns" style="display: none;">
+                <button type="button" class="btn_back">
+                    <span class="icon"><ion-icon name="arrow-back-outline"></ion-icon></span>Back
+                </button>
+                <button type="button" class="btn_next">Next
+                    <span class="icon">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </span>
+                </button>
+            </div>
+            <div class="common_btns form_4_btns" style="display: none;">
+                <button type="button" class="btn_back">
+                    <span class="icon"><ion-icon name="arrow-back-outline"></ion-icon></span>Back
+                </button>
+                <button type="button" class="btn_done">Done
+                    <span class="icon"></span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal_wrapper">
+        <div class="shadow"></div>
+        <div class="success_wrap">
+            <span class="modal_icon">
+                <ion-icon name="checkmark-outline"></ion-icon>
+            </span>
+            <p>You have successfully completed the process</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="script2.js"></script>
+</body>
+</html>
